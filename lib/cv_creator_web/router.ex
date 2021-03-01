@@ -17,6 +17,10 @@ defmodule CvCreatorWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/about-this-project", PageController, :about
+    get "/createdBy", PageController, :createdby
+    get "/home", PageController, :home
+    get "/contact", PageController, :contact
   end
 
   # Other scopes may use custom stacks.
