@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<body>
+<header>
+<head>
+<style>
+  .formulario{
+    with:460px;
+    height:auto;
+    margin:80px auto;
+    padding-left: 30px;
+    background-color: #ffffff;
+  }
+  input{
+    width: 408px;
+    height: 40px;
+    padding-left: 10px;
+  }
+</style>
+</head>
+<section class="container-fluid">
+            <img src="https://foxlabsdevelopers.com/static/1cedc7cd81dadfaf4150552bbda8b84c/630fb/new-logo.png">
+             </section>
+  <div class="someclass">
+  Information: <%= @information %>
+<div class="formulario">
+  <h1>formulario</h1>
+  
+  <h3>Escribenos y en breve nos ponemos en contacto contigo</h3>
+  <p>
+  <label for="nombre" class="colocar_nombre">Nombre <span class="obligatorio">*</span></label>
+  <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+  </p>
+  <p>
+  <label for="email" class="colocar_email">Email<span class="obligatorio">*</span></label>
+  <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="escribe tu email">
+  </p>
+   <p>
+   <label for="mensaje" class="colocar_mensaje">Mensaje <span class="obligatorio">*</span></label>  
+   <input type="mensaje" name="introducir_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aqui tu mensaje">
+    </p>                   
+              
+    <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+</div>
+</header>
+</div>
+</body>
+</html>
