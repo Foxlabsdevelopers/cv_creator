@@ -4,30 +4,55 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>CvCreator · Phoenix Framework</title>
+    <title>CvCreator · Foxlabs developers</title>
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
     <script defer type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
   </head>
   <body>
-    <header>
-      <section class="container">
-        <nav role="navigation">
-          <ul>
-            <li><a href="https://hexdocs.pm/phoenix/overview.html">Get Started</a></li>
-            <%= if function_exported?(Routes, :live_dashboard_path, 2) do %>
-              <li><%= link "LiveDashboard", to: Routes.live_dashboard_path(@conn, :home) %></li>
-            <% end %>
-          </ul>
-        </nav>
-        <a href="https://phoenixframework.org/" class="phx-logo">
-          <img src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>" alt="Phoenix Framework Logo"/>
-        </a>
-      </section>
-    </header>
-    <main role="main" class="container">
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
-      <%= @inner_content %>
-    </main>
+
+    <div class="font-sans bg-white flex flex-col w-full">
+      <div class="bg-gray-200 px-4 py-4">
+        <div class="w-full md:max-w-6xl md:mx-auto md:flex md:items-center md:justify-between">
+          <div>
+            <a href="#" class="inline-block py-2 text-gray-800 text-2xl font-bold"></a>
+          </div>
+          
+          <div>
+            <div class="hidden md:block">
+              <%= link "CV creator", to: Routes.page_path(@conn, :index), 
+                  class: "inline-block py-1 md:py-4 text-gray-600 mr-6 font-bold" %>
+
+              <%= link "Creado por", to: Routes.page_path(@conn, :createdby), 
+                  class: "inline-block py-1 md:py-4 text-gray-500 hover:text-gray-600 mr-6" %>
+
+              <%= link "Contactanos", to: Routes.page_path(@conn, :contact), 
+                  class: "inline-block py-1 md:py-4 text-gray-500 hover:text-gray-600 mr-6" %>
+
+              <%= link "Mandanos unos tacos!", to: Routes.page_path(@conn, :about), 
+                  class: "inline-block py-1 md:py-4 text-gray-500 hover:text-gray-600 mr-6" %>
+            </div>
+          </div>
+
+          <div class="hidden md:block">
+            <a
+              href="#"
+              class="inline-block py-1 md:py-4 text-gray-500 hover:text-gray-600 mr-6"
+              >Login</a
+            >
+            <a
+              href="#"
+              class="inline-block py-2 px-4 text-gray-700 bg-blue-400 hover:bg-gray-100 rounded-lg"
+              >Create your CV now</a
+            >
+          </div>
+        </div>
+      </div>
+      <main role="main" class="">
+        <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+        <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+        <%= @inner_content %>
+      </main>
+
+    </div>
   </body>
 </html>
