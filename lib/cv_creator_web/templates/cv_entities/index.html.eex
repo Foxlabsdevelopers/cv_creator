@@ -1,0 +1,29 @@
+<h1>Listing cv_entities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Funtion</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for cv_entities <- @cv_entities do %>
+    <tr>
+      <td><%= cv_entities.name %></td>
+      <td><%= cv_entities.description %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.cv_entities_path(@conn, :show, cv_entities) %></span> |
+        <span><%= link "Edit", to: Routes.cv_entities_path(@conn, :edit, cv_entities) %></span> |
+        <span><%= link "Delete", to: Routes.cv_entities_path(@conn, :delete, cv_entities), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Cv_entities", to: Routes.cv_entities_path(@conn, :new) %></span>

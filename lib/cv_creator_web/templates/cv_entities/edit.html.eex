@@ -1,0 +1,5 @@
+<h1>Edit cv_entities</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.cv_entities_path(@conn, :update, @cv_entities)) %>
+
+<span><%= link "Back", to: Routes.cv_entities_path(@conn, :index) %></span>

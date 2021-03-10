@@ -1,0 +1,21 @@
+<section class="someclas">
+  <h1><%= gettext "list %{cv_entities}!", cv_entities: "cv_entities" %></h1>
+</section>
+<table class="default">
+<thead>
+<tr>
+
+   <th>Name </th>
+   <th>Description </th>
+   <th>funtions </th>
+  </tr>
+  </thead>
+  <tbody>
+   <th> </th>
+   <th> </th>
+   <th><%= submit "edit" %></th>
+   
+    
+  </tbody>
+  
+</table>

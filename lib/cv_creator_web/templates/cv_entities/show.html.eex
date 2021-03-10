@@ -1,0 +1,18 @@
+<h1>Show Cv_entities</h1>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @cv_entities.name %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @cv_entities.description %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.cv_entities_path(@conn, :edit, @cv_entities) %></span>
+<span><%= link "Back", to: Routes.cv_entities_path(@conn, :index) %></span>

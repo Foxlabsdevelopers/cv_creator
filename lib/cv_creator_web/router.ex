@@ -17,6 +17,10 @@ defmodule CvCreatorWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/cvEntities", PageController, :home
+    get "/form", PageController, :form
+    resources "/Cv-Entities", CvEntitiesController
+
   end
 
   # Other scopes may use custom stacks.
