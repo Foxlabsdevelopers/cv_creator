@@ -1,55 +1,15 @@
-<!DOCTYPE html>
-    <body>
-        <header>
-          <head>
-            <style>
-            .info{
-                background-color: black;
-                color: white;
-                text-align: center;
-            }
-           </style>
-           </head>
-             <section class="container-fluid">
-            <img src="https://foxlabsdevelopers.com/static/1cedc7cd81dadfaf4150552bbda8b84c/630fb/new-logo.png">
-             </section>
-            <div class="someclass">
-              <br></br>
-                <h3>Text: <%= @text %> Empresa foxlabsdevelopers <a href="https://foxlabsdevelopers.com/">https://foxlabsdevelopers.com/</a> </h3>
-  
-                 <br></br>
-                <p align="center"> we design, build and deploy software!
-                We work with teams and startups to launch those amazing products you love! </p>
-            <section class="container">
-              <img src="https://foxlabsdevelopers.com/static/main-dev-53f49a8033361a4a61694b2126225d7c.png"></section>
-               <br></br>
-                  <h1 align="center">why us?</h1>
-                  <br></br>
-                   <p>Is always handy to have a team helping you to build that you want
-                      A team of fully capable professionals ready to build and launch that idea</p>
+<div class="h-screen w-full bg-white">
+  <div class="md:overflow-hidden">
+    <div class="px-4 py-16 mt-80">
+      <div class="relative w-full md:max-w-2xl md:mx-auto text-center">
+        <img src="<%= Routes.static_path(@conn, "/images/new-logo.png") %>">
+      </div>
+    </div>
+  </div>
 
-                      <section class="colums">
-                      <div>
-                      <h3>web &amp; mobile</h3>
-                      <p>we approach your project from strategies to implementation</p>
-                      </div>
-                      <div>
-                      <h3>boost your team</h3><p>we boost your team's talent to help you develop fast, easy-to-use, functional products.</p>
-                      </div>
-                      <div>
-                      <h3>let's be creative</h3><p>we love being creative with your team and help you complete those ideas you have!</p>
-                      </div>
-                      </section>
-
-            </div>
-        </header>
-    </body>
-        <footer>
-         <section>
-             <div class="info">
-               <h4>Copyright © 2020 foxlabs developers</h4>
-               <h4>info@foxlabsdevelopers.com </h4>
-            </div>
-        </section>
-        </footer>
-</html>
+  <div class="w-full text-center mt-20">
+    <h1 class="text-gray-700 text-xl sm:text-2xl md:text-5xl leading-tight">
+      Nos gusta hacer software, codificar de noche y los tacos.
+    </h1>
+  </div>
+</div>
