@@ -21,6 +21,7 @@ defmodule CvCreatorWeb.Router do
     get "/createdBy", PageController, :createdby
     get "/home", PageController, :home
     get "/contact", PageController, :contact
+    resources "/super-user", SuperUsersController
   end
 
   # Other scopes may use custom stacks.

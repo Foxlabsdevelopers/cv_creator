@@ -1,0 +1,7 @@
+<div class="bg-fixed m-25 pb-20 pt-20 p-15" style="background-image: url(https://fondosmil.com/fondo/20940.jpg)">
+<h1 class="text-gray-900 font-black text-6xl text-center">Listing super_users</h1>
+<div class="m-12 pt-10 bg-opacity-50 rounded bg-gray-400 p-12">
+<%= render "form.html", Map.put(assigns, :action, Routes.super_users_path(@conn, :create)) %>
+
+<span class="inline-block py-2 px-4 text-gray-900 bg-blue-600 hover:bg-gray-100 rounded-lg"><%= link "Back", to: Routes.super_users_path(@conn, :index) %></span>
+</div>

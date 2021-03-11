@@ -1,0 +1,42 @@
+<body class="body-bg min-h-screen pt-12 md:pt-20 pb-6 px-2 md:px-0">
+
+<main>
+<section class="mt-15">
+
+<div class="bg-fixed m-25 pb-20 pt-20 p-15" style="background-image: url(https://fondosmil.com/fondo/20940.jpg)">
+<h1 class="text-gray-900 font-black text-6xl text-center">Listing super_users</h1>
+<br>
+<div class="m-12 pt-10  bg-opacity-50 rounded-2xl bg-gray-400 p-12 ">
+<table class="border-separate border-green-800">
+ <thead>
+  <tr>
+   <th>Name</th>
+   <th>Email</th>
+   <th>Password_hash</th>
+     <th></th>
+    <tr>
+    </thead>
+    <tbody>
+<%= for super_users <- @super_users do %>
+    <tr>
+      <td><%= super_users.name %></td>
+      <td><%= super_users.email %></td>
+      <td><%= super_users.password_hash %></td>
+
+      <td>
+        <span class="inline-block py-2 px-4 text-gray-900 bg-yellow-600 hover:bg-gray-100 rounded-lg"><%= link "Show", to: Routes.super_users_path(@conn, :show, super_users) %></span>
+        <span class="inline-block py-2 px-4 text-gray-900 bg-green-500 hover:bg-gray-100 rounded-lg"><%= link "Edit", to: Routes.super_users_path(@conn, :edit, super_users) %></span>
+        <span class="inline-block py-2 px-4 text-gray-900 bg-red-600 hover:bg-gray-100 rounded-lg"><%= link "Delete", to: Routes.super_users_path(@conn, :delete, super_users), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<span class="inline-block py-2 px-4 text-gray-900 bg-green-700 hover:bg-gray-100 rounded-lg"><%= link "New SuperUsers", to: Routes.super_users_path(@conn, :new) %></span>
+</div>
+</section>
+</div>
+</main>
+
+</body>
