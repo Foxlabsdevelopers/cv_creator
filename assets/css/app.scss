@@ -5,4 +5,48 @@
 
 @tailwind components;
 
+  .back-btn {
+    @apply bg-transparent hover:bg-pink-600 text-pink-600 font-semibold hover:text-white py-2 px-4 border border-pink-600 hover:border-transparent  mr-2;
+  }
+
+  .new-btn {
+    @apply bg-transparent text-gray-800 font-semibold py-2 px-4 border border-gray-600 rounded mr-2;
+  }
+
+  .ui-table {
+    @apply mx-auto w-full whitespace-nowrap rounded-lg bg-white divide-y divide-gray-300 overflow-hidden shadow-2xl;
+  }
+
+  th {
+    @apply font-semibold text-sm uppercase px-6 py-4;
+  }
+
+  td {
+    @apply px-6 py-4 text-gray-800 text-sm font-thin tracking-wide;
+  }
+
+  label {
+    @apply block text-black text-sm font-bold mb-2 mt-2;
+  }
+
+  input:not([type='checkbox']) {
+    @apply appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight outline-none;
+  }
+
+  textarea {
+    @apply appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight;
+  }
+
+  button {
+    @apply mb-2 mt-2;
+  }
+
+  button:focus {
+    @apply outline-none;
+  }
+
+  select {
+    @apply w-full appearance-none border rounded py-2 px-3 text-black leading-tight bg-white;
+  }
+
 @tailwind utilities;
