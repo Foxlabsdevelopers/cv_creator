@@ -1,11 +1,11 @@
 <div class="w-full mx-auto">
   <div class="grid grid-cols-2">
-    <div class="">
-      <img src="https://mandalatickets.com/blog/wp-content/uploads/2020/05/Captura-de-pantalla-2020-05-04-a-las-10.58.33.png.webp">
+    <div class="p-12 ">
+      <img class="rounded-lg w-54" src="https://mandalatickets.com/blog/wp-content/uploads/2020/05/Captura-de-pantalla-2020-05-04-a-las-10.58.33.png.webp">
     </div>
 
-    <div class="">
-      <h1 class="my-20 text-gray-800 text-4xl font-semibold">
+    <div class="shadow-md px-8 h-80">
+      <h1 class="my-20 text-center text-gray-800 text-4xl font-semibold">
         Proyectos como este, siempre necesian apoyo...
       </h1>
       <p class="font-thin text-2xl">
@@ -15,28 +15,19 @@
     </div>
   </div>
 
-
-
-  <div class="p-4">
-    <br>
-    <div class="relative w-full">
-      
-    </div>
-  </div>
+<div class="w-full mx-auto">
+  <div class="text-xl sm:text-2xl leading-tight text-center grid grid-cols-3">
+    <div class="bg-gray-200 rounded-xl h-48 text-center p-8 mx-8">Los tacos son un gran alimento y pueden llegar a cumplir las características del plato del bien comer, que es la guía de los mexicanos, porque llevan la base de la tortilla que es el cereal más  un alimento de origen animal o leguminosa y la verdura. </div>
+    <div class="bg-gray-200 rounded-xl h-48 text-center p-8 mx-8">Nadie puede negarse a un buen taco, despues de haber trabajdo en un proyecto largo</div>
+    <div class="bg-gray-200 rounded-xl h-48 text-center p-8 mx-8">Se agradece las donaciones</div>
 </div>
 <br>
-<div class="w-full mx-auto">
-  <div class="text-xl sm:text-2xl leading-tight text-center grid grid-cols-3 divide-x auto-cols-max ">
-  <div class="bg-gray-200 rounded-xl h-48 text-center p-8 mx-8">Los tacos son un gran alimento y pueden llegar a cumplir las características del plato del bien comer, que es la guía de los mexicanos, porque llevan la base de la tortilla que es el cereal más  un alimento de origen animal o leguminosa y la verdura. </div>
-  <div class="bg-gray-200 rounded-xl h-48 text-center p-8 mx-8">Nadie puede negarse a un buen taco, despues de haber trabajdo en un proyecto largo</div>
-  <div class="bg-gray-200 rounded-xl h-48 text-center p-8 mx-8">Se agradece las donaciones</div>
-</div>
-<br>
+
 <div class="w-full mx-auto">
   <div class="p-4">
-  	<h1 class="text-5xl text-center">Algunos otros proyectos que tenemos</h1>
-    <div class="text-xl sm:text-2xl md:text-5xl text-center grid grid-cols-3   ">
-    <div class="relative w-full md:max-w-2xl md:mx-auto text-center">
+  	<h1 class="my-20 text-gray-800 text-center text-4xl font-semibold">Algunos otros proyectos que tenemos...</h1>
+    <div class="text-xl sm:text-2xl md:text-5xl text-center grid grid-cols-4">
+      <div class="relative w-full md:max-w-2xl md:mx-auto text-center">
         <img src="https://creator.design/_logos/65/logo-65_07.png">
       </div>
       <div class="relative w-full md:max-w-2xl md:mx-auto text-center">
