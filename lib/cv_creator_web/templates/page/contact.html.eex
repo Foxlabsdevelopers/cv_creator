@@ -1,3 +1,16 @@
+<div class="w-full p-10 h-screen">
+  <h1 class="font-semibold text-yellow-600 text-4xl text-center mb-10">Contactanos aquí!</h1>
+
+  <div class="w-1/2 bg-gray-200 p-10 mx-auto shadow-2xl rounded-xl">
+    <input class="mb-5" type="text" placeholder="nombre">
+
+    <button class="new-btn" type="button">
+        Enviar
+    </button>
+  </div>
+
+</div>
+
 <div class="m-8 w-2/6 mx-auto ">
   <div class="p-8 bg-blue-50 rounded-2xl ">
     <h1 class="font-bold text-gray-700 text-xl sm:text-2xl  leading-tight mb-6 text-center">Formulario de Contacto</h1>
