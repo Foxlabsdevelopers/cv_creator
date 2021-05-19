@@ -1,9 +1,26 @@
 <div class="w-full mx-auto">
+  <div class="grid grid-cols-2">
+    <div class="">
+      <img src="https://mandalatickets.com/blog/wp-content/uploads/2020/05/Captura-de-pantalla-2020-05-04-a-las-10.58.33.png.webp">
+    </div>
+
+    <div class="">
+      <h1 class="my-20 text-gray-800 text-4xl font-semibold">
+        Proyectos como este, siempre necesian apoyo...
+      </h1>
+      <p class="font-thin text-2xl">
+        Y aunque no estamos aquí para pedir, nunca nos negaremos a que nos mandes <br />
+        un poco de tu amor para comprarnos unos tacos!...
+      </p>
+    </div>
+  </div>
+
+
+
   <div class="p-4">
-  	<h1 class="text-4xl text-center">Nos podrias Donar lo siguiente....</h1>
     <br>
-    <div class="relative w-full md:max-w-2xl md:mx-auto text-center">
-    <img src="https://mandalatickets.com/blog/wp-content/uploads/2020/05/Captura-de-pantalla-2020-05-04-a-las-10.58.33.png.webp">
+    <div class="relative w-full">
+      
     </div>
   </div>
 </div>
