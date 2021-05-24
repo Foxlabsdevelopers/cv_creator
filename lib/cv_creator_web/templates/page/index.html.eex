@@ -14,16 +14,10 @@
     </div>
   </div>
 
-  <section class="m-0 flex flex-col w-screen justify-center bg-gray-800 h-screen text-gray-100 ">
+  <section class="m-0 flex flex-col w-full justify-center bg-gray-800 h-screen text-gray-100 ">
     <h1 class="text-6xl p-4 my-auto mx-auto  md:mx-48 ">
       <span class="text-yellow-400">CV creator</span><br />
       Donde crear un cv es algo tan sencillo, como decir Garnacha.
-    </h1>
-  </section>
-
-  <section class="m-0 flex flex-col w-screen justify-center bg-gray-700 h-auto text-gray-100 ">
-    <h1 class="text-6xl p-4 my-auto mx-auto  md:mx-48 ">
-      
     </h1>
   </section>
 
