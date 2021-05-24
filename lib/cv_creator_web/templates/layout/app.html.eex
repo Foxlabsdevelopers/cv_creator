@@ -9,6 +9,10 @@
     <script defer type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
   </head>
   <body class="font-sans flex flex-col w-full h-screen">
+    <script>
+      /*to prevent Firefox FOUC, this must be here*/
+      let FF_FOUC_FIX;
+    </script>
 
     <div class="bg-gray-200 px-4 py-4">
       <div class="w-full md:max-w-6xl md:mx-auto md:flex md:items-center md:justify-between">

@@ -1,6 +1,24 @@
-<div class="w-full mx-auto">
-  <div class="p-4">
-    <h1 class="text-2xl">Algo pa que contacten...</h1>
-  </div>
-</div>
+<div class="w-full p-10 h-screen">
+  <h1 class="font-semibold text-yellow-600 text-4xl text-center mb-10">Contactanos aquí!</h1>
 
+  <div class="w-1/2 bg-gray-200 p-10 mx-auto shadow-2xl rounded-xl">
+    <label class="required" for="name">Nombre</label>
+    <input class="mb-5" type="text" placeholder="nombre">
+
+    <label class="required" for="name">Apellido</label>
+    <input class="mb-5" type="text" placeholder="apellido">
+
+    <label class="required" for="name">Correo</label>
+    <input class="mb-5" type="text" placeholder="correo">
+
+    <label class="required" for="name">Mensaje</label>
+    <input class="mb-12" type="text" placeholder="mensaje">
+    <br>
+    <center>
+    <button class="new-btn bg-center px-8 " type="button">
+        Enviar
+    </button>
+    </center>
+  </div>
+
+</div>
