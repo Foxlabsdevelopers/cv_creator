@@ -1,7 +1,9 @@
-<div class="w-full p-10 h-screen">
-  <h1 class="font-semibold text-yellow-600 text-4xl text-center mb-10">Contactanos aquí!</h1>
 
-  <div class="w-1/2 bg-gray-200 p-10 mx-auto shadow-2xl rounded-xl">
+
+<div class="w-full bg-gray-800 p-10 h-screen">
+  <h1 class="font-semibold text-yellow-600 text-5xl text-center mb-10">Contactanos aquí!</h1>
+
+  <div class="w-2/3 bg-gray-200 p-10 mx-auto shadow-2xl rounded-xl">
     <label class="required" for="name">Nombre</label>
     <input class="mb-5" type="text" placeholder="nombre">
 
@@ -21,4 +23,5 @@
     </center>
   </div>
 
+</div>
 </div>
