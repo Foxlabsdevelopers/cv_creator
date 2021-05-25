@@ -1,24 +1,32 @@
-<div class="w-full p-10 h-screen">
-  <h1 class="font-semibold text-yellow-600 text-4xl text-center mb-10">Contactanos aquí!</h1>
-
-  <div class="w-1/2 bg-gray-200 p-10 mx-auto shadow-2xl rounded-xl">
-    <label class="required" for="name">Nombre</label>
-    <input class="mb-5" type="text" placeholder="nombre">
-
-    <label class="required" for="name">Apellido</label>
-    <input class="mb-5" type="text" placeholder="apellido">
-
-    <label class="required" for="name">Correo</label>
-    <input class="mb-5" type="text" placeholder="correo">
-
-    <label class="required" for="name">Mensaje</label>
-    <input class="mb-12" type="text" placeholder="mensaje">
-    <br>
-    <center>
-    <button class="new-btn bg-center px-8 " type="button">
-        Enviar
-    </button>
-    </center>
+<div class="h-screen">
+  <div class="bg-gray-200 md:overflow-hidden">
+    <div class="px-4 py-16">
+       <div class="relative w-full md:max-w-2xl md:mx-auto text-center">
+       <h1 class="text-grat-700 font-bold text-7xl">Contactanos aquí!</h1>
+      </div>
+    </div>
   </div>
 
+    <div class="w-full  bg-gray-800 p-10 h-screen">
+     
+      <div class="w-2/3 bg-gray-200 p-10 mx-auto shadow-2xl rounded-xl">
+        <label class="required text-3xl" for="name">Nombre</label>
+        <input class="mb-5" type="text" placeholder="nombre">
+
+        <label class="required text-3xl" for="name">Apellido</label>
+        <input class="mb-5" type="text" placeholder="apellido">
+
+        <label class="required text-3xl" for="name">Correo</label>
+        <input class="mb-5" type="text" placeholder="correo">
+
+        <label class="required text-3xl" for="name">Mensaje</label>
+        <input class="mb-12" type="text" placeholder="mensaje">
+        <br>
+          <center>
+            <button class="new-btn bg-yellow-600 text-white border-yellow-600 bg-center px-8 " type="button">
+            Enviar
+            </button>
+          </center>
+      </div>
+    </div>
 </div>

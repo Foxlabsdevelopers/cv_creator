@@ -17,7 +17,7 @@ defmodule CvCreatorWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
-    get "/about-this-project", PageController, :about
+    get "/about-this-project", PageController, :login
     get "/createdBy", PageController, :createdby
     get "/home", PageController, :home
     get "/contact", PageController, :contact

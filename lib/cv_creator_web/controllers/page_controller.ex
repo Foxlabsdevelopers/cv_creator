@@ -24,4 +24,9 @@ defmodule CvCreatorWeb.PageController do
     information= "contact"
     render(conn, "contact.html", information: information)
   end
+
+  def login(conn, _params) do
+    data= "login"
+    render(conn, "login.html", data: data)
+  end
 end

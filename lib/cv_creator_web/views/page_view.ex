@@ -37,4 +37,13 @@ defmodule CvCreatorWeb.PageView do
           "Sin informacion"
       end
     end
+
+    def personal_information(data) do
+       case data do
+        "data" ->
+          "data"
+        nil ->
+          "Sin data"
+      end
+    end
 end
