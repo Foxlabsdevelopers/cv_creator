@@ -1,0 +1,5 @@
+<h2 class="text-black">Edit General data</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.general_data_path(@conn, :update, @general_data)) %>
+
+<span><%= link "Back", to: Routes.general_data_path(@conn, :index) %></span>

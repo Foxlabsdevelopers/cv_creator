@@ -1,0 +1,38 @@
+
+
+<h1 class="text-grat-700 mx-20 text-center font-bold text-4xl">Listing General data</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Full name</th>
+      <th>City</th>
+      <th>Email</th>
+      <th>Phone number</th>
+      <th>Extract</th>
+      <th>Functions</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for general_data <- @general_data do %>
+    <tr>
+      <td><%= general_data.full_name %></td>
+      <td><%= general_data.city %></td>
+      <td><%= general_data.email %></td>
+      <td><%= general_data.phone_number %></td>
+      <td><%= general_data.extract %></td>
+      
+
+      <td>
+        <span><%= link "Show", to: Routes.general_data_path(@conn, :show, general_data) %></span>
+        <span><%= link "Edit", to: Routes.general_data_path(@conn, :edit, general_data) %></span>
+        <span><%= link "Delete", to: Routes.general_data_path(@conn, :delete, general_data), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New General data", to: Routes.general_data_path(@conn, :new) %></span>

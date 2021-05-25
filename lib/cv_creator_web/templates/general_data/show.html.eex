@@ -1,0 +1,38 @@
+<h1>Show General data</h1>
+
+<ul>
+
+  <li>
+    <strong>Full name:</strong>
+    <%= @general_data.full_name %>
+  </li>
+
+  <li>
+    <strong>City:</strong>
+    <%= @general_data.city %>
+  </li>
+
+  <li>
+    <strong>Email:</strong>
+    <%= @general_data.email %>
+  </li>
+
+  <li>
+    <strong>Phone number:</strong>
+    <%= @general_data.phone_number %>
+  </li>
+
+  <li>
+    <strong>Extract:</strong>
+    <%= @general_data.extract %>
+  </li>
+
+  <li>
+    <strong>Functions:</strong>
+    <%= @general_data.functions %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.general_data_path(@conn, :edit, @general_data) %></span>
+<span><%= link "Back", to: Routes.general_data_path(@conn, :index) %></span>
