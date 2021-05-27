@@ -1,4 +1,0 @@
-<%= for cv_entities <- @cv_entities do %>
-<p> <%= cv_entities.name %> </p>
-<p> <%= cv_entities.description %> </p>
-<% end %>

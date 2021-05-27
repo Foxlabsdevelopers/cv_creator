@@ -1,0 +1,44 @@
+<div class="bg-gray-200 md:overflow-hidden">
+   <h1 class="text-grat-700 p-10 mx-20 text-center font-bold text-5xl">Show General data</h1>
+     <div class="px-4 py-16">
+     </div>
+</div>
+
+<div class="w-full  bg-gray-800 p-10 h-screen">
+  <div class="w-2/3 bg-gray-200 text-3xl p-10 mx-auto shadow-2xl rounded-xl">
+
+      <ul> 
+
+        <li>
+         <strong>Full name:</strong>
+         <%= @general_data.full_name %>
+        </li>
+
+        <li>
+          <strong>City:</strong>
+          <%= @general_data.city %>
+        </li>
+
+        <li>
+          <strong>Email:</strong>
+          <%= @general_data.email %>
+        </li>
+
+        <li>
+          <strong>Phone number:</strong>
+          <%= @general_data.phone_number %>
+        </li>
+
+        <li>
+         <strong>Extract:</strong>
+         <%= @general_data.extract %>
+        </li>
+
+
+      </ul>
+    <center>
+    <span class="text-3xl bg-blue-500 rounded-lg px-5"><%= link "Edit", to: Routes.general_data_path(@conn, :edit, @general_data) %></span>
+    <span class="text-3xl bg-indigo-500 rounded-lg px-5"><%= link "Back", to: Routes.general_data_path(@conn, :index) %></span>
+    </center>
+  </div>
+</div>

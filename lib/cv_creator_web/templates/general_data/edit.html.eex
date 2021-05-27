@@ -1,0 +1,14 @@
+<div class="bg-gray-200 md:overflow-hidden">
+   <h1 class="text-grat-700 mx-20 p-10 text-center font-bold text-5xl">Edit General data</h1>
+     <div class="px-4 py-16">
+     </div>
+</div>
+<div class="w-full  bg-gray-800 p-10 h-screen">
+   <div class="w-2/3 bg-gray-200 p-10 mx-auto shadow-2xl rounded-xl">
+
+    <%= render "form.html", Map.put(assigns, :action, Routes.general_data_path(@conn, :update, @general_data)) %>
+    
+    <span class="text-3xl text-center bg-indigo-500 rounded-lg px-6 p-2"><%= link "Back", to: Routes.general_data_path(@conn, :index) %></span>
+    
+   </div>
+</div>
