@@ -1,4 +1,3 @@
-<div class="mx-8">
 <%= form_for @changeset, @action, fn f -> %>
   <%= if @changeset.action do %>
     <div class="alert alert-danger">
@@ -25,10 +24,11 @@
   <%= label f, :extract %>
   <%= textarea f, :extract %>
   <%= error_tag f, :extract %>
+  
 <center>
-  <div class="">
+  <div>
     <%= submit "Save" %>
   </div>
 </center>
 <% end %>
-</div>
+

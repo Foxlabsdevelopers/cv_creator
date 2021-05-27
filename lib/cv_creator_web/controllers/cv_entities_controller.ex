@@ -53,7 +53,7 @@ defmodule CvCreatorWeb.CvEntitiesController do
 
   def delete(conn, %{"id" => id}) do
     cv_entities = Content.get_cv_entities!(id)
-    {:ok, _cv_entities} = Content.delete_cv_entities(cv_entities)
+    {:ok, _cv_entities} = Content.deletes_cv_entities(cv_entities)
 
     conn
     |> put_flash(:info, "cv_entities deleted successfully.")
