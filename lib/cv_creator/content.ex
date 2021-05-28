@@ -2,6 +2,7 @@ defmodule CvCreator.Content do
   alias CvCreator.Repo
 
   alias CvCreator.Content.GeneralData
+  alias CvCreator.Content.{GeneralData, Experience}
 
   @doc """
   Returns the list of general_data.
@@ -13,7 +14,9 @@ defmodule CvCreator.Content do
 
   """
   def list_general_data do
-    Repo.all(GeneralData)
+    GeneralData
+    |>Repo.all()
+    |>Repo.preload(:experience)
   end
 
   @doc """
@@ -30,8 +33,11 @@ defmodule CvCreator.Content do
       ** (Ecto.NoResultsError)
 
   """
-  def get_general_data!(id), do: Repo.get!(GeneralData, id)
-
+  def get_general_data!(id) do
+   GeneralData
+   |>Repo.get!(id)
+   |>Repo.preload(:experience)
+  end
   @doc """
   Creates a general_data.
 
@@ -44,9 +50,10 @@ defmodule CvCreator.Content do
       {:error, %Ecto.Changeset{}}
 
   """
-  def create_general_data(attrs \\ %{}) do
+  def create_general_data(%Experience{} = experience, attrs \\ %{}) do
     %GeneralData{}
     |> GeneralData.changeset(attrs)
+    |> Ecto.Changeset.put_change(:experience_id, experience.id)
     |> Repo.insert()
   end
 
@@ -96,4 +103,105 @@ defmodule CvCreator.Content do
   def change_general_data(%GeneralData{} = general_data, attrs \\ %{}) do
     GeneralData.changeset(general_data, attrs)
   end
+
+  alias CvCreator.Content.Experience
+
+  @doc """
+  Returns the list of experience.
+
+  ## Examples
+
+      iex> list_experience()
+      [%Experience{}, ...]
+
+  """
+  def list_experience do
+    Repo.all(Experience)
+  end
+
+  @doc """
+  Gets a single experience.
+
+  Raises `Ecto.NoResultsError` if the Experience does not exist.
+
+  ## Examples
+
+      iex> get_experience!(123)
+      %Experience{}
+
+      iex> get_experience!(456)
+      ** (Ecto.NoResultsError)
+
+  """
+  def get_experience!(id) do
+    Experience
+    |>Repo.get!(id)
+    |>Repo.preload(:general_data)
+  end
+  @doc """
+  Creates a experience.
+
+  ## Examples
+
+      iex> create_experience(%{field: value})
+      {:ok, %Experience{}}
+
+      iex> create_experience(%{field: bad_value})
+      {:error, %Ecto.Changeset{}}
+
+  """
+  def create_experience(%GeneralData{} = general_data, attrs \\ %{}) do
+    %Experience{}
+    |> Experience.changeset(attrs)
+    |> Ecto.Changeset.put_change(:general_data_id, general_data.id)
+    |> Repo.insert()
+  end
+
+  @doc """
+  Updates a experience.
+
+  ## Examples
+
+      iex> update_experience(experience, %{field: new_value})
+      {:ok, %Experience{}}
+
+      iex> update_experience(experience, %{field: bad_value})
+      {:error, %Ecto.Changeset{}}
+
+  """
+  def update_experience(%Experience{} = experience, attrs) do
+    experience
+    |> Experience.changeset(attrs)
+    |> Repo.update()
+  end
+
+  @doc """
+  Deletes a experience.
+
+  ## Examples
+
+      iex> delete_experience(experience)
+      {:ok, %Experience{}}
+
+      iex> delete_experience(experience)
+      {:error, %Ecto.Changeset{}}
+
+  """
+  def delete_experience(%Experience{} = experience) do
+    Repo.delete(experience)
+  end
+
+  @doc """
+  Returns an `%Ecto.Changeset{}` for tracking experience changes.
+
+  ## Examples
+
+      iex> change_experience(experience)
+      %Ecto.Changeset{data: %Experience{}}
+
+  """
+  def change_experience(%Experience{} = experience, attrs \\ %{}) do
+    Experience.changeset(experience, attrs)
+  end
+
 end
