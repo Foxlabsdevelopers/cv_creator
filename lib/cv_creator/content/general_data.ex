@@ -2,12 +2,15 @@ defmodule CvCreator.Content.GeneralData do
   use Ecto.Schema
   import Ecto.Changeset
 
+  alias CvCreator.Content.Experience
+
   schema "general_data" do
     field :city, :string
     field :email, :string
     field :extract, :string
     field :full_name, :string
     field :phone_number, :string
+    belongs_to :experience, Experience
 
     timestamps()
   end

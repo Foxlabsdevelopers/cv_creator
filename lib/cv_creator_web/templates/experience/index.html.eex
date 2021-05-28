@@ -1,0 +1,32 @@
+<h1>Listing Experience</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Company name</th>
+      <th>Started date</th>
+      <th>Ended date</th>
+      <th>Description</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for experience <- @experience do %>
+    <tr>
+      <td><%= experience.company_name %></td>
+      <td><%= experience.started_date %></td>
+      <td><%= experience.ended_date %></td>
+      <td><%= experience.description %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.experience_path(@conn, :show, experience) %></span>
+        <span><%= link "Edit", to: Routes.experience_path(@conn, :edit, experience) %></span>
+        <span><%= link "Delete", to: Routes.experience_path(@conn, :delete, experience), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Experience", to: Routes.experience_path(@conn, :new) %></span>
