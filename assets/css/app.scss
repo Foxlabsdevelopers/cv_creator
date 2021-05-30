@@ -10,11 +10,11 @@
   }
 
   .new-btn {
-    @apply bg-transparent text-gray-800 font-semibold py-2 px-4 border border-gray-600 rounded mr-2;
+    @apply bg-transparent border-gray-800 hover:bg-gray-800 text-gray-800 font-semibold hover:text-white py-2 px-4 border rounded mr-2;
   }
 
   .ui-table {
-    @apply mx-auto w-full whitespace-nowrap rounded-lg bg-white divide-y divide-gray-300 overflow-hidden shadow-2xl;
+    @apply mx-auto w-full whitespace-nowrap rounded-lg bg-white divide-y divide-gray-300 overflow-hidden shadow-xl;
   }
 
   th {
