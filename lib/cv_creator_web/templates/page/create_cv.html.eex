@@ -1,0 +1,22 @@
+
+<div class="h-screen">
+
+  <div class="bg-gray-200 md:overflow-hidden">
+    <div class="px-4 py-16">
+        <h1 class="font-bold text-center text-grat-700 text-7xl leading-tight mx-6">
+          El Mejor creador de CV's 
+        </h1>
+    </div>
+
+    <center class="h-60">
+        
+      <%= link "Hacer mi CV", to: Routes.page_path(@conn, :wizard), 
+       class: "inline-block py-4 px-4 text-gray-700 font-bold bg-blue-400 hover:bg-gray-100 rounded-lg" %>
+              
+    </center>
+
+  </div>
+  <section class="flex flex-col md:overflow-hidden justify-center bg-gray-800 h-screen text-gray-100 ">
+   
+  </section>
+    

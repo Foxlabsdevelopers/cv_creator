@@ -29,4 +29,15 @@ defmodule CvCreatorWeb.PageController do
     data= "login"
     render(conn, "login.html", data: data)
   end
+
+  def createcv(conn, _params) do
+    create= "createcv"
+    render(conn, "create_cv.html", create: create)
+  end
+
+  def wizard(conn, _params) do
+    steps= "createcv"
+    render(conn, "wizard.html", steps: steps)
+  end
+
 end

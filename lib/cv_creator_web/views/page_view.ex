@@ -46,4 +46,23 @@ defmodule CvCreatorWeb.PageView do
           "Sin data"
       end
     end
+
+    def create_cv(created) do
+       case created do
+        "created" ->
+          "created"
+        nil ->
+          "Sin created"
+      end
+    end
+
+    def information_general(wizard) do
+       case wizard do
+        "wizard" ->
+          "wizard"
+        nil ->
+          "Sin wizard"
+      end
+    end
+
 end
