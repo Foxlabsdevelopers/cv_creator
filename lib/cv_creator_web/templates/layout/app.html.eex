@@ -38,11 +38,9 @@
 
         <div class="hidden md:block">
         
-          <a
-            href="#"
-            class="inline-block py-2 px-4 text-gray-700 bg-blue-400 hover:bg-gray-100 rounded-lg"
-            >Create your CV now</a
-          >
+          <%= link "Create your CV now", to: Routes.page_path(@conn, :createcv), 
+                class: "inline-block py-2 px-4 text-gray-700 bg-blue-400 hover:bg-gray-100 rounded-lg" %>
+            
         </div>
       </div>
     </div>
